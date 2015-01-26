@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/searchET"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-2dp"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:hint="Enter zipcode to search"
+        android:textColorHint="#bbbbbb"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_menu_search"
+        android:layout_toLeftOf="@+id/searchMore"
+        android:layout_toRightOf="@+id/searchET"
+        android:id="@+id/searchButton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_menu_more"
+        android:id="@+id/searchMore" />
+
+</RelativeLayout>
